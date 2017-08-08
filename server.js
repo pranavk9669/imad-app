@@ -32,10 +32,10 @@ heading2: 'the bet neer dies'
         {
  <html>
     <head>
-    <link href="/ui/style.css" rel="stylesheet" />
  <title> 
  ${title}
  </title>
+ <link href="/ui/style.css" rel="stylesheet" />
  </head>
  <body>
     <div class='hell'>
@@ -55,7 +55,7 @@ ${content}
         }
     }
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'article-one.html'));
+  res.send(createtemplate(article-one));
 });
 
 app.get('/article-two', function (req, res) {
