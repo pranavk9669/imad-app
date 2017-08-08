@@ -22,38 +22,41 @@ var helly = {
 heading2: 'the bet neer dies'
     };
     
-    function createTtemplate(data){
+    function createTtemplate(data)
+    {
         var title=data.title;
         var heading=data.heading;
         var content=dta.content;
         var heading2=data.heading2;
         
-        var htmltemplate=
-        {
- <html>
-    <head>
- <title> 
- ${title}
- </title>
- <link href="/ui/style.css" rel="stylesheet" />
- </head>
- <body>
-    <div class='hell'>
+    var htmltemplate=
+    
+    <html>
+     <head>
+         <title> 
+            ${title}
+        </title>
+            <link href="/ui/style.css" rel="stylesheet" />
+     </head>
+    <body>
+        <div class='hell'>
     <hr/>
-<h1>
-${heading}
-</h1>
-<div>
-${content}
-</div>
-<h2>
-   ${heading2}
+    <h1>
+         ${heading}
+    </h1>
+    <div>
+         ${content}
+    </div>
+    <h2>
+         ${heading2}
    </h2>
-</div>
-</body>
-</html>
-        }
-    }
+     </div>
+         </body>
+    </html>
+    ;
+    return htmltemplate;
+   
+   }
 app.get('/article-one', function (req, res) {
   res.send(createtemplate(article-one));
 });
