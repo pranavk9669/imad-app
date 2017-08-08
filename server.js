@@ -58,7 +58,7 @@ heading2: 'the bet neer dies'
    
    }
 app.get('/article-one', function (req, res) {
-  res.send(createtemplate(article-one));
+  res.send(createtemplate(article-one.html));
 });
 
 app.get('/article-two', function (req, res) {
