@@ -78,9 +78,9 @@ heading2: 'the bet neer dies 3'
    }
    
    
-app.get('/:hellyname', function (req, res) {
-    var hellyname = req.params.hellyname;
-  res.send(createtemplate(helo[hellyname]));
+app.get('/:hellyName', function (req, res) {
+    var hellyName = req.params.hellyName;
+  res.send(createtemplate(helo[hellyName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
