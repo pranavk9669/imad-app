@@ -22,7 +22,7 @@ var helly = {
 heading2: 'the bet neer dies'
     };
     
-    function createTtemplate(data)
+    function createtemplate(data)
     {
         var title=data.title;
         var heading=data.heading;
