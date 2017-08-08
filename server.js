@@ -9,9 +9,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var helo={
+var hellos={
 
-    'helly1': {
+    'hello-one': {
     title: 'the hell of',
     heading: 'kill the superman',
     content: ` <p>
@@ -23,7 +23,7 @@ var helo={
 </p>`,
 heading2: 'the bet neer dies'
     },
-    'helly2': {
+    'hello-two': {
          title: 'the hell of 2',
     heading: 'kill the superman 2',
     content: ` <p>
@@ -31,7 +31,7 @@ heading2: 'the bet neer dies'
 </p>`,
 heading2: 'the bet neer dies 2'
     },
-    'helly3':{
+    'hello-three':{
          title: 'the hell of 3',
     heading: 'kill the superman 3',
     content: ` <p>
@@ -78,9 +78,9 @@ heading2: 'the bet neer dies 3'
    }
    
    
-app.get('/:hellyName', function (req, res) {
-    var hellyName = req.params.hellyName;
-  res.send(createtemplate(helo[hellyName]));
+app.get('/:helloName', function (req, res) {
+    var helloName = req.params.helloName;
+  res.send(createtemplate(hellos[helloName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
