@@ -9,7 +9,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var hellos={
+var hellos = {
 
     'hello-one': {
     title: 'the hell of',
@@ -23,14 +23,16 @@ var hellos={
 </p>`,
 heading2: 'the bet neer dies'
     },
+   
     'hello-two': {
          title: 'the hell of 2',
     heading: 'kill the superman 2',
     content: ` <p>
     die you son of a bitch 2
-</p>`,
+  </p>`,
 heading2: 'the bet neer dies 2'
     },
+   
     'hello-three':{
          title: 'the hell of 3',
     heading: 'kill the superman 3',
