@@ -9,6 +9,51 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var helly = {
+    title: 'the hell of',
+    heading: 'kill the superman',
+    content: ` <p>
+    die you son of a bitch
+     die you son of a bitch
+      die you son of a bitch
+       die you son of a bitch
+        die you son of a bitch
+</p>`,
+heading2: 'the bet neer dies'
+    };
+    
+    function createTtemplate(data){
+        var title=data.title;
+        var heading=data.heading;
+        var content=dta.content;
+        var heading2=data.heading2;
+        
+        var htmltemplate=
+        {
+ <html>
+    <head>
+    <link href="/ui/style.css" rel="stylesheet" />
+ <title> 
+ ${title}
+ </title>
+ </head>
+ <body>
+    <div class='hell'>
+    <hr/>
+<h1>
+${heading}
+</h1>
+<div>
+${content}
+</div>
+<h2>
+   ${heading2}
+   </h2>
+</div>
+</body>
+</html>
+        }
+    }
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'article-one.html'));
 });
