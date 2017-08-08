@@ -9,7 +9,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var helly = {
+var helo={
+
+    'helly1': {
     title: 'the hell of',
     heading: 'kill the superman',
     content: ` <p>
@@ -20,6 +22,23 @@ var helly = {
         die you son of a bitch
 </p>`,
 heading2: 'the bet neer dies'
+    },
+    'helly2': {
+         title: 'the hell of 2',
+    heading: 'kill the superman 2',
+    content: ` <p>
+    die you son of a bitch 2
+</p>`,
+heading2: 'the bet neer dies 2'
+    },
+    'helly3':{
+         title: 'the hell of 3',
+    heading: 'kill the superman 3',
+    content: ` <p>
+    die you son of a bitch 3
+</p>`,
+heading2: 'the bet neer dies 3'
+    }
     };
     
     function createtemplate(data)
@@ -57,8 +76,11 @@ heading2: 'the bet neer dies'
     return htmltemplate;
    
    }
-app.get('/article-one', function (req, res) {
-  res.send(createtemplate(helly));
+   
+   
+app.get('/:hellyname', function (req, res) {
+    var hellyname = req.params.hellyname;
+  res.send(createtemplate(helo[hellyname]));
 });
 
 app.get('/article-two', function (req, res) {
