@@ -26,7 +26,7 @@ heading2: 'the bet neer dies'
     {
         var title=data.title;
         var heading=data.heading;
-        var content=dta.content;
+        var content=data.content;
         var heading2=data.heading2;
         
     var htmltemplate=
