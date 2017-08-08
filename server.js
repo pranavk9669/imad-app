@@ -83,14 +83,6 @@ app.get('/:hellyname', function (req, res) {
   res.send(createtemplate(helo[hellyname]));
 });
 
-app.get('/article-two', function (req, res) {
-  res.send('hel two');
-});
-
-app.get('/article-three', function (req, res) {
-  res.send('kill the batman');
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
