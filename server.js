@@ -31,7 +31,7 @@ heading2: 'the bet neer dies'
         
     var htmltemplate=
     
-    <html>
+    `<html>
      <head>
          <title> 
             ${title}
@@ -39,7 +39,7 @@ heading2: 'the bet neer dies'
             <link href="/ui/style.css" rel="stylesheet" />
      </head>
     <body>
-        <div class='hell'>
+        <div class="hell">
     <hr/>
     <h1>
          ${heading}
@@ -53,7 +53,7 @@ heading2: 'the bet neer dies'
      </div>
          </body>
     </html>
-    ;
+    `;
     return htmltemplate;
    
    }
